@@ -1,12 +1,12 @@
 import React from "react";
-import image1 from "../register/image1.png";
+import image from "../register/image.jpg";
 import { Link } from "react-router-dom";
 function Register() {
     return (
         <div
             className="flex "
             style={{
-                background: `url(${image1}) lightgray 50% / cover no-repeat`,
+                background: `url(${image}) lightgray 50% / cover no-repeat`,
             }}
         >
             <div className="w-1/2"></div>

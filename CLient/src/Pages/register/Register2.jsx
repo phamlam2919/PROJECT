@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import image2 from "../register/image2.png";
 function Register2() {
     return (
         <div
             className="flex "
             style={{
-                background: `url(https://s3-alpha-sig.figma.com/img/9a9e/47c2/e9616a505cacf5af4c003a40b67f74de?Expires=1703462400&Signature=VyLEaR05sW4pXTVf5uRUxaC4iCuUaX5yRFimuIeEFSa3UoVU6vMl0s6dPY-1G1jBRlvwtdDcBynNlwlE~m~xUa5REPpUP4dxtYbyMEYEOxxIMa6n8nlMUbaZtWhlZU2JPHI6ZpZ4eFvpGEUMGDvStoTzzeoe1Umd2zoORP-axowNODR2BzXHe8UnQuBCfApYFuJnmDpbccpYj2r9FrXln~R6AAcWFRe4cXpcSZL6LboqUNTqAfcLdmV3I-LdYeEaHkT5HPq~FXI4u4TLvrUeEfOrzH8-aVzzGh~SFQLKYIhsLsW2bAe8VqiVkFrG3i16muSccaoWUAxQSX4zTe1TCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) lightgray 50% / cover no-repeat`,
+                background: `url(${image2}) lightgray 50% / cover no-repeat`,
             }}
         >
             <div className="w-1/2"></div>
@@ -71,12 +71,14 @@ function Register2() {
                                 Back
                             </button>
                         </Link>
-                        <button
-                            className="text-white bg-[#E25319] w-[500px] rounded-2xl h-[54px] mt-5"
-                            style={{ padding: "16px 24px" }}
-                        >
-                            Next
-                        </button>
+                        <Link to="/login">
+                            <button
+                                className="text-white bg-[#E25319] w-[500px] rounded-2xl h-[54px] mt-5"
+                                style={{ padding: "16px 24px" }}
+                            >
+                                Next
+                            </button>
+                        </Link>
                     </div>
 
                     <h3 className="text-white text-[30px] font-medium mt-5">

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../register/image.jpg";
+import image2 from "../login/image2.png";
 // import { Input } from "antd";
-function Register1() {
+function Login() {
     return (
         <div
             className="flex "
             style={{
-                background: `url(${image}) lightgray 50% / cover no-repeat`,
+                background: `url(${image2}) lightgray 50% / cover no-repeat`,
             }}
         >
             <div className="w-1/2"></div>
@@ -16,44 +16,27 @@ function Register1() {
                     className="bg-[#111] h-[ ] rounded-3xl flex flex-col items-center gap-4"
                     style={{ padding: "30px 40px" }}
                 >
-                    <h1 className="text-white text-4xl font-medium ">
-                        Getting started!
-                    </h1>
+                    <h1 className="text-white text-4xl font-medium ">Login!</h1>
                     <p className="text-[#EAEAEF] text-center text-base font-medium flex flex-col justify-center w-[480px]">
                         Look like you are new to us! Create an account for a
                         complete experience.
                     </p>
-                    <input
-                        type="text"
-                        className="h-[54px] rounded-2xl bg-[#3A3A3A] text-white w-[600px] "
-                        style={{ padding: "12px 16px" }}
-                        placeholder="Username"
-                    /> 
+
                     <input
                         type="email"
                         className="h-[54px] rounded-2xl bg-[#3A3A3A] text-white w-[600px] "
                         style={{ padding: "12px 16px" }}
                         placeholder="Enter your email"
                     />
-                    <input
-                        type="text"
-                        className="h-[54px] rounded-2xl bg-[#3A3A3A] text-white w-[600px] "
-                        style={{ padding: "12px 16px" }}
-                        placeholder="Phone Number"
-                    />
+
                     <input
                         type="password"
                         className="h-[54px] rounded-2xl bg-[#3A3A3A] text-white w-[600px] "
                         style={{ padding: "12px 16px" }}
                         placeholder="Password"
                     />
-                    <input
-                        type="password"
-                        className="h-[54px] rounded-2xl bg-[#3A3A3A] text-white w-[600px] "
-                        style={{ padding: "12px 16px" }}
-                        placeholder="Confirm password"
-                    />
-                    <Link to="/register2">
+
+                    <Link to="/homepage">
                         <button
                             className="text-white bg-[#E25319] w-[600px] rounded-2xl h-[54px] mt-5"
                             style={{ padding: "16px 24px" }}
@@ -61,13 +44,13 @@ function Register1() {
                             Next
                         </button>
                     </Link>
-
-                    {/* <h3 className="text-white text-[30px] font-medium mt-10">
+  
+                    <h3 className="text-white text-[30px] font-medium mt-10">
                         Full contactless experience
                     </h3>
                     <p className="text-white text-base font-medium">
                         From ordering to paying, that’s all contactless
-                    </p> */}
+                    </p>
                     <div className="flex items-center gap-2 justify-center mt-5">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -139,4 +122,4 @@ function Register1() {
     );
 }
 
-export default Register1;
+export default Login;
