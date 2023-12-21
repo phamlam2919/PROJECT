@@ -36,7 +36,7 @@ function Login() {
                         placeholder="Password"
                     />
 
-                    <Link to="/homepage">
+                    <Link to="/">
                         <button
                             className="text-white bg-[#E25319] w-[600px] rounded-2xl h-[54px] mt-5"
                             style={{ padding: "16px 24px" }}
@@ -44,7 +44,7 @@ function Login() {
                             Next
                         </button>
                     </Link>
-  
+
                     <h3 className="text-white text-[30px] font-medium mt-10">
                         Full contactless experience
                     </h3>
